@@ -8,5 +8,11 @@ myApp.config(function($routeProvider) {
     }).when('/frodo', {
         templateUrl: 'views/frodo.html',
         controller: 'FrodoController as fc'
-    } ).otherwise({ redirectTo: '/'});
+    } ).when('/gandalf', {
+        templateUrl: 'views/gandalf.html',
+        controller: 'GandalfController as gc'
+    }).when('/gimli', {
+        templateUrl: 'views/gimli.html',
+        controller: 'GimliController as ic'
+    }) .otherwise({ redirectTo: '/'});
 });
